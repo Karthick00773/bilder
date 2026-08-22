@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Projects & Portfolio | Gridline Build Co.</title>
+<meta name="description" content="Browse completed and ongoing residential, commercial and renovation projects delivered by Gridline Build Co.">
+<meta name="keywords" content="house construction contractor, building construction company, civil construction works, centering shuttering works, mason work, labour supply, building maintenance">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header" id="siteHeader">
+  <div class="wrap header-inner">
+    <a href="index.html" class="logo" aria-label="Gridline Build Co. home">
+      <svg class="logo-mark" viewBox="0 0 48 48" fill="none">
+        <rect x="2" y="2" width="44" height="44" stroke="#E8A233" stroke-width="2"/>
+        <path d="M2 24H14M24 2V14M46 24H34M24 46V34" stroke="#E8A233" stroke-width="2"/>
+        <path d="M14 34L24 14L34 34H14Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+      </svg>
+      <span class="logo-text"><b>Gridline</b><span>Build Co.</span></span>
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a class="active" href="projects.html">Projects</a>
+      <a href="quote.html">Get a Quote</a>
+      <a href="contact.html">Contact</a>
+      <div class="header-cta-mobile">
+        <a href="quote.html" class="btn btn-amber btn-block">Get Free Quote</a>
+        <a href="tel:+919876543210" class="btn btn-outline btn-block">Call Now</a>
+      </div>
+    </nav>
+
+    <div class="header-cta">
+      <a href="quote.html" class="btn btn-amber btn-sm">Get Free Quote</a>
+      <a href="tel:+919876543210" class="icon-btn" aria-label="Call now">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      </a>
+      <button class="hamburger" id="hamburgerBtn" aria-label="Toggle menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="page-banner">
+    <div class="blueprint-grid"></div>
+    <div class="wrap" style="position:relative;z-index:2;">
+      <p class="crumbs">Home / Projects</p>
+      <h1>Projects &amp; Portfolio</h1>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div class="filter-row reveal">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="residential">Residential</button>
+        <button class="filter-btn" data-filter="commercial">Commercial</button>
+        <button class="filter-btn" data-filter="renovation">Renovation</button>
+        <button class="filter-btn" data-filter="ongoing">Ongoing</button>
+      </div>
+
+      <div class="projects-grid reveal" id="projectsGrid">
+        <div class="project-card" data-cat="residential completed">
+          <div class="project-media" style="background:linear-gradient(135deg,#3B5166,#23282C);"><span class="status-chip status-completed">Completed</span></div>
+          <div class="project-body">
+            <div class="project-meta"><span>Residential</span><span>&middot;</span><span>Whitefield, Bengaluru</span></div>
+            <h3>The Anand Residence</h3>
+            <p>G+2 independent house, 2,400 sq.ft. Full turnkey contract from foundation to interior finishing.</p>
+          </div>
+        </div>
+        <div class="project-card" data-cat="commercial ongoing">
+          <div class="project-media" style="background:linear-gradient(135deg,#E8A233,#BE4319);"><span class="status-chip status-ongoing">Ongoing</span></div>
+          <div class="project-body">
+            <div class="project-meta"><span>Commercial</span><span>&middot;</span><span>Electronic City</span></div>
+            <h3>Meridian Business Suites</h3>
+            <p>4-storey commercial block; centering, structural and civil works currently in progress.</p>
+          </div>
+        </div>
+        <div class="project-card" data-cat="renovation completed">
+          <div class="project-media" style="background:linear-gradient(135deg,#2D3338,#5E7A91);"><span class="status-chip status-completed">Completed</span></div>
+          <div class="project-body">
+            <div class="project-meta"><span>Renovation</span><span>&middot;</span><span>Jayanagar</span></div>
+            <h3>Rao Bungalow Renovation</h3>
+            <p>Full exterior remodel, structural strengthening, re-painting and interior finishing.</p>
+          </div>
+        </div>
+        <div class="project-card" data-cat="residential ongoing">
+          <div class="project-media" style="background:linear-gradient(135deg,#5E7A91,#1B1F22);"><span class="status-chip status-ongoing">Ongoing</span></div>
+          <div class="project-body">
+            <div class="project-meta"><span>Residential</span><span>&middot;</span><span>Sarjapur Road</span></div>
+            <h3>Krishnan Villa</h3>
+            <p>G+1 villa, 3,100 sq.ft. Currently at roof-slab centering and concreting stage.</p>
+          </div>
+        </div>
+        <div class="project-card" data-cat="commercial completed">
+          <div class="project-media" style="background:linear-gradient(135deg,#BE4319,#23282C);"><span class="status-chip status-completed">Completed</span></div>
+          <div class="project-body">
+            <div class="project-meta"><span>Commercial</span><span>&middot;</span><span>HSR Layout</span></div>
+            <h3>Orbit Retail Complex</h3>
+            <p>Ground + 1 retail complex, 8 shop units, delivered with full MEP coordination.</p>
+          </div>
+        </div>
+        <div class="project-card" data-cat="residential completed">
+          <div class="project-media" style="background:linear-gradient(135deg,#3B5166,#5E7A91);"><span class="status-chip status-completed">Completed</span></div>
+          <div class="project-body">
+            <div class="project-meta"><span>Residential</span><span>&middot;</span><span>Indiranagar</span></div>
+            <h3>Fernandes Family Home</h3>
+            <p>G+3 home with terrace garden. Complete civil, mason and finishing work.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="blueprint-grid"></div>
+    <div class="wrap cta-band-inner">
+      <h2>Have a similar project in mind?</h2>
+      <div class="cta-band-actions">
+        <a href="quote.html" class="btn btn-amber">Start Your Project</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-col footer-about">
+      <div class="logo">
+        <svg class="logo-mark" viewBox="0 0 48 48" fill="none">
+          <rect x="2" y="2" width="44" height="44" stroke="#E8A233" stroke-width="2"/>
+          <path d="M2 24H14M24 2V14M46 24H34M24 46V34" stroke="#E8A233" stroke-width="2"/>
+          <path d="M14 34L24 14L34 34H14Z" stroke="white" stroke-width="2" stroke-linejoin="round"/>
+        </svg>
+        <span class="logo-text"><b style="color:#fff;">Gridline</b><span>Build Co.</span></span>
+      </div>
+      <p>Full house construction contractor handling labour, centering, civil works and finishing under one roof &mdash; from the first stage to a move-in ready building.</p>
+      <div class="social-row" style="margin-top:20px;">
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.4h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.4v7A10 10 0 0 0 22 12z"/></svg></a>
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5C4.98 4.9 3.9 6 2.5 6S0 4.9 0 3.5 1.1 1 2.5 1s2.48 1.1 2.48 2.5zM.5 8h4V23h-4V8zm7.5 0h3.8v2.05h.05c.53-1 1.83-2.05 3.77-2.05C19.7 8 21 10.15 21 13.6V23h-4v-8.1c0-1.93-.03-4.4-2.68-4.4-2.68 0-3.1 2.1-3.1 4.27V23h-4V8z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="quote.html">Get a Quote</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Services</h5>
+      <ul>
+        <li><a href="services.html">House Construction</a></li>
+        <li><a href="services.html">Commercial Construction</a></li>
+        <li><a href="services.html">Building Maintenance</a></li>
+        <li><a href="services.html">Centering / Shuttering</a></li>
+        <li><a href="services.html">Renovation &amp; Remodeling</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h5>Contact</h5>
+      <div class="footer-contact-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        <span>+91 98765 43210</span>
+      </div>
+      <div class="footer-contact-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 6l-10 7L2 6"/><rect x="2" y="4" width="20" height="16" rx="1"/></svg>
+        <span>info@gridlinebuild.com</span>
+      </div>
+      <div class="footer-contact-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        <span>No. 24, Ring Road, Whitefield, Bengaluru 560066</span>
+      </div>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>&copy; 2026 Gridline Build Co. All rights reserved.</span>
+    <span>Built with steel, concrete &amp; a lot of coffee.</span>
+  </div>
+</footer>
+
+<div class="float-stack">
+  <a href="tel:+919876543210" class="float-btn call-float" aria-label="Call now">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+  </a>
+  <a href="https://wa.me/919876543210" target="_blank" rel="noopener" class="float-btn wa-btn" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.521-.075-.148-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.29.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.001 2C6.478 2 2 6.478 2 12c0 1.85.5 3.585 1.377 5.078L2 22l5.052-1.327A9.947 9.947 0 0 0 12.001 22C17.523 22 22 17.523 22 12S17.523 2 12.001 2zm0 18.077a8.033 8.033 0 0 1-4.31-1.253l-.309-.184-3.19.836.85-3.115-.2-.319A8.032 8.032 0 1 1 20.03 12a8.038 8.038 0 0 1-8.03 8.077z"/></svg>
+  </a>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
